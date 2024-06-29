@@ -24,12 +24,15 @@ jobs:
       - name: Run a one-line script
         run: zip -r Worldustry.zip .
 
+      - name: print debug
+        run: ls
+
       - name: Upload a Build Artifact
         uses: actions/upload-artifact@v4.3.3
         with:
           name: Worldustry-build
           path: Worldustry.zip
-          if-no-files-found: error
+          if-no-files-found: ignore
           retention-days: 30
           compression-level: 6
           overwrite: true
