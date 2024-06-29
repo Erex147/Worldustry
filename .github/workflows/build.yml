@@ -22,7 +22,7 @@ jobs:
     steps:
       # Zip repository
       - name: Run a one-line script
-        run: zip -r Worldustry.zip .
+        run: zip -r ./myproject.zip . -x ".git/*" ".github/*" ".DS_Store"
 
       - name: print debug
         run: ls
