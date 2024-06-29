@@ -20,13 +20,13 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      # Zip repository
+      - name: Checkout repository
         uses: actions/checkout@v4
-        
-      - name: Run a one-line script
-        run: zip -r ./myproject.zip . -x ".git/*" ".github/*" ".DS_Store"
 
-      - name: print debug
+      - name: Run a one-line script
+        run: zip -r Worldustry.zip . -x ".git/*" ".github/*" ".DS_Store"
+
+      - name: Print debug
         run: ls
 
       - name: Upload a Build Artifact
