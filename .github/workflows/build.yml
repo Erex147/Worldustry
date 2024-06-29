@@ -35,6 +35,6 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
 
-        name: zip file?
+      - name: zip file?
         run: |
           zip -r Worldustry.zip .
