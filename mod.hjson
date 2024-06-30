@@ -5,4 +5,6 @@ description: "Average day in the balkans."
 version: "1.0"
 minGameVersion: "146"
 main: worldustry.Worldustry
-dep
+dependencies: [ ]
+hidden: false
+java: true
