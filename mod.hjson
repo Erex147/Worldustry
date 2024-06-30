@@ -4,5 +4,7 @@ author: Erex147
 description: "Average day in the balkans."
 version: "1.0"
 minGameVersion: "146"
+main: worldustry.Worldustry
 dependencies: [ ]
 hidden: false
+java: true
