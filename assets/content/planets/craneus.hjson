@@ -9,6 +9,8 @@ atmosphereRadIn: 0.0
 atmosphereColor: 808080
 defaultEnv: 1
 
+landCloudColor: = ed6542
+
 generator: ErekirPlanetGenerator
 
 mesh: [
