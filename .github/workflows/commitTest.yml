@@ -15,7 +15,7 @@ jobs:
       uses: actions/setup-java@v4.2.1
       with:
         java-version: 17
-        distribution: jdk
+        distribution: oracle
     - name: Build mod jar
       run: |
         chmod +x ./gradlew
