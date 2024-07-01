@@ -1,7 +1,7 @@
 name: "worldustry"
 displayName: "Worldustry"
 author: Erex147
-description: "Average day in the balkans."
+description: "A Java mod that adds some content. (WIP)"
 version: "1.0"
 minGameVersion: "146"
 main: worldustry.Worldustry

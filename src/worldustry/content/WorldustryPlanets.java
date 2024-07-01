@@ -11,6 +11,7 @@ import mindustry.gen.*;
 import mindustry.graphics.g3d.HexMesh;
 import mindustry.graphics.g3d.HexSkyMesh;
 import mindustry.graphics.g3d.MultiMesh;
+import mindustry.graphics.g3d.NoiseMesh;
 import mindustry.maps.planet.ErekirPlanetGenerator;
 import mindustry.mod.*;
 import mindustry.type.Planet;
@@ -24,20 +25,20 @@ public class WorldustryPlanets {
      public static void load() {
         pluto = new Planet("pluto", Planets.sun, 1, 1){{
             generator = new ErekirPlanetGenerator();
-            meshLoader = () -> new HexMesh(this, 5);
-                cloudMeshLoader = () -> new MultiMesh(
-                        new HexSkyMesh(this, 2, 0.10f, 0.14f, 5, Color.valueOf("eba768").a(0.75f), 2, 0.42f, 1f, 0.23f),
-                        new HexSkyMesh(this, 3, 0.2f, 0.15f, 5, Color.valueOf("eea293").a(0.75f), 2, 0.42f, 1.2f, 0.25f)
-                );
+            meshLoader = () -> new NoiseMesh(this, 3, 5, 0.92f, 2, 0.5f, 2, 1, Color.valueOf("808080"), Color.valueOf("2f0909"), 1, 0.8f, 1f, 0.5f);
+            cloudMeshLoader = () -> new MultiMesh(
+                new HexSkyMesh(this, 3, 0.2f, 0.0012f, 5, Color.valueOf("2f0909").a(0.75f), 2, 0.42f, 1.2f, 0.25f),
+                new HexSkyMesh(this, 5, 0.5f, 0.001f, 5, Color.valueOf("2f0941").a(0.35f), 3, 0.38f, 1.2f, 0.3f)
+            );
             alwaysUnlocked = true;
-            landCloudColor = Color.valueOf("ed6542");
-            atmosphereColor = Color.valueOf("f01822");
-            defaultEnv = Env.scorching | Env.terrestrial;
+            landCloudColor = Color.valueOf("d3d3d3");
+            atmosphereColor = Color.valueOf("ffffff");
+            defaultEnv = Env.terrestrial;
             startSector = 10;
-            atmosphereRadIn = 0.02f;
-            atmosphereRadOut = 0.3f;
+            atmosphereRadIn = 0.0f;
+            atmosphereRadOut = 0.005f;
             tidalLock = true;
-            orbitRadius = 11f;
+            orbitRadius = 33f;
             lightSrcTo = 0.5f;
             lightDstFrom = 0.2f;
             clearSectorOnLose = true;
@@ -45,6 +46,7 @@ public class WorldustryPlanets {
             iconColor = Color.valueOf("ff1010");
             hiddenItems.addAll(Items.serpuloItems).removeAll(Items.erekirItems);
             enemyBuildSpeedMultiplier = 0.4f;
+            bloom = false;
 
             allowLaunchToNumbered = false;
             updateLighting = false;

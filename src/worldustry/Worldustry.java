@@ -1,5 +1,8 @@
 package worldustry;
 
+import worldustry.*;
+import worldustry.content.*;
+
 import arc.*;
 import arc.util.*;
 import mindustry.*;
@@ -12,8 +15,6 @@ import mindustry.ui.dialogs.*;
 public class Worldustry extends Mod{
 
     public Worldustry(){
-        Log.info("Loaded Worldustry constructor.");
-
         //listen for game load event
         Events.on(ClientLoadEvent.class, e -> {
             //show dialog upon startup
@@ -30,7 +31,7 @@ public class Worldustry extends Mod{
 
     @Override
     public void loadContent(){
-        Log.info("Loading some example content.");
+        WorldustryPlanets.load();
     }
 
 }
