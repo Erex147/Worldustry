@@ -48,10 +48,10 @@ public class WorldustryPlanets {
             enemyBuildSpeedMultiplier = 0.4f;
             bloom = false;
 
-            allowLaunchToNumbered = false;
+            allowLaunchToNumbered = true;
             updateLighting = false;
 
-            defaultAttributes.set(Attribute.heat, 1f);
+            defaultAttributes.set(Attribute.heat, 0f);
 
             ruleSetter = r -> {
                 r.waveTeam = Team.malis;
