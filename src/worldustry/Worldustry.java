@@ -32,6 +32,7 @@ public class Worldustry extends Mod{
     @Override
     public void loadContent(){
         WorldustryPlanets.load();
+        WorldustrySectorPresets.load();
     }
 
 }
