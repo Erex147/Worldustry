@@ -1,21 +1,13 @@
 package worldustry.content;
 
-import arc.*;
 import arc.graphics.Color;
-import arc.util.*;
-import mindustry.*;
 import mindustry.content.*;
-import mindustry.game.EventType.*;
 import mindustry.game.Team;
-import mindustry.gen.*;
-import mindustry.graphics.g3d.HexMesh;
 import mindustry.graphics.g3d.HexSkyMesh;
 import mindustry.graphics.g3d.MultiMesh;
 import mindustry.graphics.g3d.NoiseMesh;
 import mindustry.maps.planet.ErekirPlanetGenerator;
-import mindustry.mod.*;
 import mindustry.type.Planet;
-import mindustry.ui.dialogs.*;
 import mindustry.world.meta.Attribute;
 import mindustry.world.meta.Env;
 
