@@ -1,8 +1,8 @@
 package worldustry.content;
 
-import mindustry.type.*;
-
 import static worldustry.content.WorldustryPlanets.*;
+
+import mindustry.type.*;
 
 public class WorldustrySectorPresets{
     public static SectorPreset

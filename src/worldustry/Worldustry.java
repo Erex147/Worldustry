@@ -1,12 +1,11 @@
 package worldustry;
 
-import worldustry.content.*;
-
 import arc.*;
 import arc.util.*;
 import mindustry.game.EventType.*;
 import mindustry.mod.*;
 import mindustry.ui.dialogs.*;
+import worldustry.content.*;
 
 public class Worldustry extends Mod{
 
