@@ -9,16 +9,12 @@ public class WorldustrySectorPresets{
     arisings;
 
     public static void load(){
-        //region serpulo
+        // pluto region 
 
-        arisings = new SectorPreset("arisings", pluto, 10){{
-            alwaysUnlocked = true;
+        arisings = new SectorPreset("arisings", salra, 10){{
             addStartingItems = true;
-            captureWave = 10;
+            alwaysUnlocked = true;
             difficulty = 1;
-            overrideLaunchDefaults = true;
-            noLighting = true;
-            startWaveTimeMultiplier = 3f;
         }};
 
         //endregion

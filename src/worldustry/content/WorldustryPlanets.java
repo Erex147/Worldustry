@@ -12,10 +12,10 @@ import mindustry.world.meta.Attribute;
 import mindustry.world.meta.Env;
 
 public class WorldustryPlanets {
-     public static Planet pluto;
+     public static Planet salra;
 
      public static void load() {
-        pluto = new Planet("pluto", Planets.sun, 1, 1){{
+        salra = new Planet("salra", Planets.sun, 1, 1){{
             generator = new ErekirPlanetGenerator();
             meshLoader = () -> new NoiseMesh(this, 3, 5, 0.92f, 2, 0.5f, 2, 1, Color.valueOf("808080"), Color.valueOf("2f0909"), 1, 0.8f, 1f, 0.5f);
             cloudMeshLoader = () -> new MultiMesh(
