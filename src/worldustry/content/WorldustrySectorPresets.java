@@ -9,12 +9,14 @@ public class WorldustrySectorPresets{
     arisings;
 
     public static void load(){
-        // pluto region 
+        // salra region 
 
         arisings = new SectorPreset("arisings", salra, 10){{
             addStartingItems = true;
             alwaysUnlocked = true;
             difficulty = 1;
+            captureWave = 30;
+            attackAfterWaves = false;
         }};
 
         //endregion

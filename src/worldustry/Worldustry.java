@@ -28,6 +28,7 @@ public class Worldustry extends Mod{
     public void loadContent(){
         WorldustryPlanets.load();
         WorldustrySectorPresets.load();
+        WorldustryItems.load();
     }
 
 }
