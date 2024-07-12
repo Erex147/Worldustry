@@ -6,7 +6,7 @@ import mindustry.type.*;
 
 public class WorldustryItems{
     public static Item
-    plutalium;
+    plutalium, necronite;
 
     public static final Seq<Item> salraItems = new Seq<>();
 
@@ -16,6 +16,15 @@ public class WorldustryItems{
                 hardness = 1;
                 cost = 1.1f;
                 alwaysUnlocked = true;
+            }
+        };
+
+        necronite = new Item("necronite", Color.valueOf("324ea8")){
+            {
+                hardness = 1;
+                cost = 1.1f;
+                alwaysUnlocked = true;
+                charge = 0.17f;
             }
         };
 
